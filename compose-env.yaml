@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db-school:
+    image: postgres:12
+    restart: always
+    ports:
+      - 5453:5432
+    environment:
+      POSTGRES_PASSWORD: 1254
+      POSTGRES_USER: admin
+      POSTGRES_DB: school
